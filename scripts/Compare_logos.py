@@ -55,8 +55,8 @@ def main():
 	Output_no = "results/logo/{A}_noPresent.png".format(A=Ab)
 	Output_yes = "results/logo/{A}_Present.png".format(A=Ab)
 	#Call command
-	call("bash Other_scripts/Logos.sh {MSA} {OUT}".format(MSA=Temp_no, OUT=Output_no), shell=True)
-	call("bash Other_scripts/Logos.sh {MSA} {OUT}".format(MSA=Temp_yes, OUT=Output_yes), shell=True)
+	call("bash scripts/Logos.sh {MSA} {OUT}".format(MSA=Temp_no, OUT=Output_no), shell=True)
+	call("bash scripts/Logos.sh {MSA} {OUT}".format(MSA=Temp_yes, OUT=Output_yes), shell=True)
 		
 		
 if __name__ == '__main__':
