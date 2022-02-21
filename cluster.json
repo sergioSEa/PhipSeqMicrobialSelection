@@ -1,0 +1,53 @@
+{
+    "__default__":
+    {
+        "mem": "16G",
+        "time": "2:00:00",
+        "name": "{rule}.{wildcards}",
+        "output": "logs/{rule}.{wildcards}.out",
+        "error": "logs/{rule}.{wildcards}.err",
+        "c": "1",
+        "qos": "regular"
+    },
+    "Alignment_peptide":
+     {
+         "time": "14:00:00"
+     },
+    "Alignments_per_participant":
+    {
+         "time": "14:00:00",
+    },
+    "Collapse_Alignments":
+    {
+         "time": "1:00:00",
+         "mem": "8GB"
+    },
+    "Create_database":
+    {
+         "mem": "8GB"
+    },
+    "Get_clean_read":
+    {
+         "time": "00:10:00",
+         "mem": "4GB"
+    },
+    "Extract_and_clean_read":
+    {
+        "mem": "8GB"
+    },
+    "Phylogeny":
+    {
+        "time": "24:00:00",
+        "mem": "10GB"     
+    },
+    "Compute_dnds":
+    {
+        "time": "48:00:00",
+        "c": "4"
+    },
+    "run_Diamond":
+    {
+         "time": "24:00:00",
+    },
+    
+}
